@@ -1,3 +1,5 @@
+[![Build Status](https://cloud.drone.io/api/badges/akhenakh/insidetree/status.svg)](https://cloud.drone.io/akhenakh/insidetree)
+
 insidetree
 ==========
 
