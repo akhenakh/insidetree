@@ -9,6 +9,6 @@ steps:
 - name: test
   image: golang
   commands:
-  - go get
+  - go get .
   - go get github.com/stretchr/testify/require
   - go test
