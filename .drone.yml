@@ -11,4 +11,5 @@ steps:
   commands:
   - go get .
   - go get github.com/stretchr/testify/require
+  - go get github.com/twpayne/go-geom
   - go test
