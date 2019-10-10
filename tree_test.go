@@ -140,7 +140,7 @@ func prepareData(tree *Tree) error {
 			rawCoords := g.FlatCoords()
 			coords := g.FlatCoords()[0 : len(rawCoords)-2]
 			l := LoopFromCoordinates(coords)
-			if l == nil || !l.IsValid() || !l.HasInterior() || l.IsFull() || l.ContainsOrigin() {
+			if l == nil || l.Validate() != nil || l.Dimension() != 2 || l.IsFull() || l.ContainsOrigin() {
 				continue
 			}
 			cu := coverer.Covering(l)
